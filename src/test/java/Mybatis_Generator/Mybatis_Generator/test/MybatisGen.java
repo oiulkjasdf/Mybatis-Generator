@@ -1,3 +1,4 @@
+package Mybatis_Generator.Mybatis_Generator.test;
 
 
 import java.io.File;
@@ -14,7 +15,7 @@ public class MybatisGen {
            List<String> warnings = new ArrayList<String>();
            boolean overwrite = true;
            //项目根路径不要有中文,我的有中文,所以使用绝对路径
-           File configFile = new File("F:/refrence.xml");
+           File configFile = new File("./src/resource/refrence.xml");
            ConfigurationParser cp = new ConfigurationParser(warnings);
            Configuration config = cp.parseConfiguration(configFile);
            DefaultShellCallback callback = new DefaultShellCallback(overwrite);
